@@ -1,0 +1,134 @@
+$primaryColor: rgba(45, 145, 254, 1);
+$textColor: rgba(13, 15, 82, 1);
+$border: 1px solid rgba(229, 229, 243, 1);
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+}
+  
+.body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    
+
+    .btn{
+      padding: 14px 24px;
+      border-radius: 42px;
+      border: none;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .sidebar{
+      min-height: 100vh;
+      border-right: $border;
+      
+      padding-inline: 50px;
+      .logo{
+        height: 132px;
+        display: flex;
+        padding-inline: 1rem;
+        align-items: center;
+        border-bottom: $border;
+      }
+      .content{
+        padding-top: 64px;
+        .balanceBox{
+          .numbers{
+            display: flex;
+            gap: 10px;
+            
+            h2{
+              font-size: 24px;
+              color: $textColor
+            }
+        
+            .textIcon{
+              display: flex;
+              justify-content: space-between;
+              // align-items: center;
+              gap: 40px;
+            }
+          }
+
+          .buttons{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 24px;
+
+
+            .blue{
+              background-color: $primaryColor;
+              color: white;
+            }
+            .outline{
+              background-color: #fff;
+              border: 1px solid #E5E5F3;
+              font-weight: 400;
+              color: $textColor;
+            }
+          }
+          .warningText{
+            display: flex;
+            align-items: start;
+            gap: 10px;
+            padding-top: 40px;
+            padding-bottom: 50px;
+            border-bottom: $border;
+
+            p{
+              color: $textColor;
+              opacity: 0.5;
+            }
+          }
+          .saudiIllustration{
+
+            img{
+              width: 174px;
+            }
+            h3{
+              margin-top: 40px;
+              margin-bottom: 28px;
+              color: $textColor
+            }
+            p{
+              font-size: 14px;
+              color: $textColor;
+              opacity: 0.5;
+            }
+            padding-block: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .page{
+      .header{
+        height: 132px;
+        background-color: black;
+      }
+      .content{
+        background-color: blue;
+        min-height: calc(100vh - 132px);
+      }
+    }
+}
+
+
+
