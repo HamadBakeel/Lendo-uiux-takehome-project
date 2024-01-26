@@ -295,6 +295,7 @@ $red: rgba(255, 103, 105, 1);
 
         .card-1{
           display: flex;
+          // margin-bottom: 32px;
           .conservative{
             border-radius: 16px;
             border: 1px solid $primaryColor;
@@ -384,7 +385,34 @@ $red: rgba(255, 103, 105, 1);
             }
           }
         }
+        .stats{
+          display: grid;
+          grid-template-columns: calc(50% - 16px) calc(50% - 16px);
+          gap: 32px;
 
+          .card{
+            padding: 40px 48px 28px;
+            .cardTitle{
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 32px;
+              max-width: 297px;
+              img{
+                margin-left: 8px;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .apexcharts-legend-series{
+            display: flex;
+            margin-bottom: 10px !important;
+          }
+          .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left, .apexcharts-legend.apx-legend-position-top.apexcharts-align-left, .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+            justify-content: center;
+          }
+        }
       }
     }
 }
