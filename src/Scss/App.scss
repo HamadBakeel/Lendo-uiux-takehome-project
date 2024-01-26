@@ -205,8 +205,81 @@ $border: 1px solid rgba(229, 229, 243, 1);
         }
       }
       .content{
-        // background-color: blue;
         min-height: calc(100vh - 132px);
+        padding-top: 56px;
+        padding-inline: 64px;
+
+        .autoInvestment{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $textColor;
+
+          h1{
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+          }
+          .activate{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            span{
+            opacity: 0.5; 
+
+            }
+            .switch {
+              display: inline-block;
+              height:24px;
+              position: relative;
+              width:40px;
+  
+              input {
+                display: none;
+              }
+              .slider {
+                background-color: #ccc;
+                bottom: 0;
+                cursor: pointer;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: .4s;
+              }
+              .slider:before {
+                background-color: #fff;
+                bottom: 1px;
+                content: "";
+                height: 22px;
+                left: 1px;
+                position: absolute;
+                transition: 0.4s;
+                width: 21px;
+              }
+              input:checked + .slider {
+                background-color: #66bb6a;
+              }
+              input:checked + .slider:before {
+                transform: translateX(17px);
+              }
+              .slider.round {
+                border-radius: 34px;
+              }
+              .slider.round:before {
+                border-radius: 50%;
+              }
+            }
+          }
+          
+          
+
+        }
       }
     }
 }

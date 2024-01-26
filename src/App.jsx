@@ -84,7 +84,19 @@ function App() {
               </button>
             </div>
           </header>
-          <div className="content"></div>
+          <div className="content">
+            <div className="autoInvestment">
+              <h1>Auto Investment</h1>
+
+              <div className="activate">
+                <span>Active</span>
+                <label class="switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
