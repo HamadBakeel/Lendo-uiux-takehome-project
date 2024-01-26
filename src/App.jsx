@@ -3,6 +3,7 @@ import './Scss/App.scss'
 import ApexCharts from 'apexcharts'
 import Chart from 'react-apexcharts'
 import ReactApexChart from 'react-apexcharts';
+import Accordion from './Components/Accordion';
 
 class LinesChart extends Component {
   constructor(props) {
@@ -287,6 +288,8 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <Accordion/>
           </div>
         </div>
       </div>

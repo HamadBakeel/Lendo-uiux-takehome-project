@@ -1,3 +1,4 @@
+@import url('./Fonts.scss');
 $primaryColor: rgba(45, 145, 254, 1);
 $textColor: rgba(13, 15, 82, 1);
 $border: 1px solid rgba(229, 229, 243, 1);
@@ -43,11 +44,11 @@ $red: rgba(255, 103, 105, 1);
 }
   
 .body{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 360px 1fr;
-    
+    padding-bottom: 100px;
 
     .btn{
       padding: 14px 24px;
@@ -78,17 +79,19 @@ $red: rgba(255, 103, 105, 1);
     .sidebar{
       min-height: 100vh;
       border-right: $border;
-      
-      padding-inline: 50px;
+      height: fit-content;
       .logo{
         height: 132px;
         display: flex;
         padding-inline: 1rem;
         align-items: center;
         border-bottom: $border;
+        margin-inline: 50px ;
       }
       .content{
         padding-top: 64px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding-inline: 50px;
         .balanceBox{
           .numbers{
             display: flex;
