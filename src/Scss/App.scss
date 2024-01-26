@@ -1,6 +1,8 @@
 $primaryColor: rgba(45, 145, 254, 1);
 $textColor: rgba(13, 15, 82, 1);
 $border: 1px solid rgba(229, 229, 243, 1);
+$green: rgba(128, 203, 23, 1);
+$red: rgba(255, 103, 105, 1);
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -55,6 +57,22 @@ $border: 1px solid rgba(229, 229, 243, 1);
       font-style: normal;
       font-weight: 600;
       cursor: pointer;
+
+      &.blue{
+        background-color: $primaryColor;
+        color: white;
+      }
+
+      &.orange{
+        background-color: $red;
+        color: white;
+      }
+      &.outline{
+        background-color: #fff;
+        border: 1px solid #E5E5F3;
+        font-weight: 400;
+        color: $textColor;
+      }
     }
 
     .sidebar{
@@ -94,18 +112,6 @@ $border: 1px solid rgba(229, 229, 243, 1);
             justify-content: center;
             gap: 5px;
             margin-top: 24px;
-
-
-            .blue{
-              background-color: $primaryColor;
-              color: white;
-            }
-            .outline{
-              background-color: #fff;
-              border: 1px solid #E5E5F3;
-              font-weight: 400;
-              color: $textColor;
-            }
           }
           .warningText{
             display: flex;
@@ -207,7 +213,7 @@ $border: 1px solid rgba(229, 229, 243, 1);
       .content{
         min-height: calc(100vh - 132px);
         padding-top: 56px;
-        padding-inline: 64px;
+        margin-inline: 64px;
 
         .autoInvestment{
           display: flex;
@@ -230,8 +236,7 @@ $border: 1px solid rgba(229, 229, 243, 1);
             font-style: normal;
             font-weight: 400;
             span{
-            opacity: 0.5; 
-
+              opacity: 0.5; 
             }
             .switch {
               display: inline-block;
@@ -280,6 +285,106 @@ $border: 1px solid rgba(229, 229, 243, 1);
           
 
         }
+
+        .card{
+          border-radius: 16px;
+          border: 1px solid #E5E5F3;
+          padding: 32px 40px;
+          margin-top: 32px;
+        }
+
+        .card-1{
+          display: flex;
+          .conservative{
+            border-radius: 16px;
+            border: 1px solid $primaryColor;
+            background: var(--gradient, radial-gradient(1191.32% 115.38% at 96.39% 8.75%, #2DA5FE 0%, #218AF5 100%));
+            box-shadow: 0px 32px 26px -20px rgba(35, 120, 207, 0.25);
+            height: 108px;
+            width: 132px;
+            padding: 32px;
+            color: white;
+            h2{
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 24px;
+            }
+            h3{
+              margin-top: 30px;
+              font-size: 30px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 40px;
+            }
+            h4{
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px; /* 142.857% */
+              letter-spacing: 0.21px;
+            }
+          }
+          .cardContent{
+            flex-grow: 1;
+            padding-top: 25px;
+            padding-left: 64px;
+
+            .top{
+              display: flex;  
+              justify-content: space-between;
+              max-width: 480px;
+              .item{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                
+                h3{
+                  font-size: 17px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 24px;
+                  color: $textColor;
+                  &.active{
+                    color: $green
+                  }
+                }
+                p{
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 20px;
+                  letter-spacing: 0.21px;
+                  opacity: 0.5;
+                  color: $textColor;
+                }
+    
+              }
+            }
+            .bottom{
+              padding-top: 40px;
+              padding-right: 24px;
+              display: flex;
+              flex-grow: 1;
+              align-items: center;
+              justify-content: space-between;
+              .note{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.21px;
+                opacity: 0.5;
+                color: $textColor;
+              }
+              .buttons{
+                display: flex;
+                gap: 12px
+              }
+            }
+          }
+        }
+
       }
     }
 }

@@ -96,6 +96,52 @@ function App() {
                 </label>
               </div>
             </div>
+
+            <div className="card card-1">
+              <div className="conservative">
+                <h2>
+                  Conservative  
+                </h2>
+                
+                <h3>
+                  10-14%
+                </h3>
+
+                <h4>
+                  Interest Rate
+                </h4>
+              </div>
+
+              <div className="cardContent">
+                <div className="top">
+                  <div className="item">
+                    <h3 className='active'>Active</h3>
+                    <p>Status</p>
+                  </div>
+                  <div className="item">
+                    <h3 className=''>1500 SAR</h3>
+                    <p>Max. Investement</p>
+                  </div>
+                  <div className="item">
+                    <h3 className=''>26</h3>
+                    <p>Loans Funded</p>
+                  </div>
+                </div>
+                <div className="bottom">
+                  <p className="note">
+                    * Strategy started at 20th March 2021
+                  </p>
+                  <div className="buttons">
+                    <button className="btn orange">
+                      Stop
+                    </button>
+                    <button className="btn outline">
+                      Change Settings
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
