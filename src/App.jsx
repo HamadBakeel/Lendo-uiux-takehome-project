@@ -217,7 +217,7 @@ function App() {
               <div className="activate">
                 <span>Active</span>
                 <label class="switch" for="checkbox">
-                  <input type="checkbox" id="checkbox" />
+                  <input type="checkbox"  checked id="checkbox" />
                   <div class="slider round"></div>
                 </label>
               </div>

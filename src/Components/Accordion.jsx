@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';  // Correct import statement
 import ReactDOM from 'react-dom';
-import '../Scss/Accordion.scss'
+import '../Scss/accordion.scss'
 const faqs = [
   {
     id: 1,
