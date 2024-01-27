@@ -294,6 +294,10 @@
 
         .card-1{
           display: flex;
+          @media (max-width: 991px) {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
           // margin-bottom: 32px;
           .conservative{
             border-radius: 16px;
@@ -389,6 +393,13 @@
           grid-template-columns: calc(50% - 16px) calc(50% - 16px);
           gap: 32px;
 
+          @media (max-width: 991px) {
+            display: flex;
+            flex-wrap: wrap;
+            .card{
+              width: 100%;
+            }
+          }
           .card{
             padding: 40px 48px 28px;
             .cardTitle{
